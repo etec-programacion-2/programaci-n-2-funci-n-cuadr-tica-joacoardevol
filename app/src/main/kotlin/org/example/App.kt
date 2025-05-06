@@ -11,10 +11,7 @@ class App {
 }
 
 fun main() {
-    println(App().greeting)
-}
-fun main() {
-    // Definición de coeficientes
+     // Definición de coeficientes
     val a = 2.0
     val b = -4.0
     val c = 1.5
@@ -46,4 +43,7 @@ fun formatoFuncionCuadratica(a: Double, b: Double, c: Double): String {
     val termC = if (c > 0) "+$c" else "$c"
 
     return "$termA$termB$termC"
+}
+
+    println(App().greeting)
 }
