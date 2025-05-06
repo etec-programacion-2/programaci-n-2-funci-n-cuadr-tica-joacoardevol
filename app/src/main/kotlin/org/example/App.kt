@@ -11,7 +11,7 @@ class App {
 }
 
 fun main() {
-un main() {
+
     val a = 4
     val b = 6
     val c = -9    if (a == 0) {
