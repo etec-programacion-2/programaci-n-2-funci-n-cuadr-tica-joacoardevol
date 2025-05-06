@@ -11,38 +11,18 @@ class App {
 }
 
 fun main() {
-     // Definición de coeficientes
-    val a = 2.0
-    val b = -4.0
-    val c = 1.5
-
-    // Validación: 'a' no debe ser cero
-    if (a == 0.0) {
-        println("El coeficiente 'a' no puede ser cero en una función cuadrática.")
+un main() {
+    val a = 4
+    val b = 6
+    val c = -9    if (a == 0) {
+        println("El coeficiente 'a' no puede ser cero.")
         return
+    }    val funcion = buildString {
+        append("${a}x² ")
+        append(if (b >= 0) "+ $b" else "- ${-b}")
+        append("x ")
+        append(if (c >= 0) "+ $c" else "- ${-c}")
     }
-
-    // Mostrar la función en formato ax² + bx + c
-    println("La función cuadrática es: ${formatoFuncionCuadratica(a, b, c)}")
-}
-
-// Función para mostrar la ecuación en formato ax² + bx + c
-fun formatoFuncionCuadratica(a: Double, b: Double, c: Double): String {
-    fun coefToStr(coef: Double, variable: String): String {
-        return when {
-            coef == 0.0 -> ""
-            coef == 1.0 -> "+$variable"
-            coef == -1.0 -> "-$variable"
-            coef > 0 -> "+${coef}$variable"
-            else -> "${coef}$variable"
-        }
-    }
-
-    val termA = "${a}x²"
-    val termB = coefToStr(b, "x")
-    val termC = if (c > 0) "+$c" else "$c"
-
-    return "$termA$termB$termC"
     println(App().greeting)
 }
 
