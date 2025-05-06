@@ -43,7 +43,8 @@ fun formatoFuncionCuadratica(a: Double, b: Double, c: Double): String {
     val termC = if (c > 0) "+$c" else "$c"
 
     return "$termA$termB$termC"
-}
-
     println(App().greeting)
 }
+
+
+
